@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play games</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="flex-row text-center ">
+            <h1 class="bg-gray-100 p-4 text-2xl font-bold uppercase text-gray-600">Play games</h1>
+            <h2 class="text-xl font-semibold text-red-500 p-4">
+                Player1 Score :<span class="ml-2 mr-4 bg-yellow-200 px-2 rounded-sm" id="ploneSc">0</span> 
+                Player2 Score :<span class="ml-2 mr-4 bg-yellow-200 px-2 rounded-sm" id="pltwoSc">0</span> 
+            </h2>
+            <p class="bg-green-200 mx-96 py-2 rounded font-bold">Winning Score : <span id="disInput">5</span> </p>
+            <div class="py-4 space-x-3">
+                <input type="number" id="inputScore"
+                class="border-2 rounded w-24 pb-1 pl-2  focus:outline-none">
+                <button id="btn1" class="bg-blue-300 pb-1 px-3 rounded border border-blue-600">player1</button>
+                <button id="btn2" class="bg-blue-300 pb-1 px-3 rounded border border-blue-600">player2</button>
+                <button type="submit" id="RBtn" class="bg-red-300 pb-1 px-3 rounded border border-red-600">Restart</button>
+            </div>
+            
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
